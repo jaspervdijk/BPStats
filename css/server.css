@@ -1,0 +1,31 @@
+.jumbotron{
+    text-align: center;
+    padding: 12px;
+}
+
+.mypanel{
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .columns{
+        height: auto;
+        overflow-y:scroll;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .columns{
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
+        column-count:2;
+        width: 500px;
+        height: auto;
+    }
+}
