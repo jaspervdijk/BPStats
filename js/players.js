@@ -46,6 +46,5 @@ function useJSON(json){
 
         var myadderdiv = document.getElementById("adder");
         myadderdiv.appendChild(element);
-        console.log(obj);
     });
 }
