@@ -9,7 +9,6 @@ fetch('https://cors-anywhere.herokuapp.com/https://brokeprotocol.com/servers.jso
 function useJSON(json){
     json.forEach(
         function(obj){ 
-            console.log(obj);
         var element = document.createElement("div");
         element.className = "jumbotron";
         var h1 = document.createElement("h1");
@@ -45,6 +44,5 @@ function useJSON(json){
         p3.appendChild(a);
         var myadderdiv = document.getElementById("adder");
         myadderdiv.appendChild(element);
-        console.log(obj);
     });
 }
