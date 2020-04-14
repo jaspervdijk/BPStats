@@ -8,7 +8,7 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-    fetch('https://brokeprotocol.com/servers.json')
+    fetch('https://cors-anywhere.herokuapp.com/https://brokeprotocol.com/servers.json')
     .then(res => res.json())
     .then((out) => {
         useJSON(out);
