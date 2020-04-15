@@ -21,6 +21,7 @@ function useJSON(json){
           index = i;
         }
     }
+    console.log(json[index]);
 
     var h1 = document.getElementById("h1");
     var p1 = document.getElementById("p1");

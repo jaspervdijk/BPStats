@@ -20,3 +20,24 @@ h1{
 .mt-4, .my-4 {
     margin-top: 0!important;
 }
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+.mr-2, .mx-2 {
+    margin-right: .5rem!important;
+}
+.rounded {
+    border-radius: .25rem!important;
+}

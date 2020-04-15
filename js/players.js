@@ -42,9 +42,9 @@ function useJSON(json){
         element.appendChild(p2);
         element.appendChild(p3);
         element.appendChild(breaker);
-        
 
         var myadderdiv = document.getElementById("adder");
         myadderdiv.appendChild(element);
+        console.log(obj);
     });
 }
