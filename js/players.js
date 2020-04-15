@@ -1,4 +1,5 @@
 var mydata = null;
+var vv = "left";
 
 fetch('https://cors-anywhere.herokuapp.com/https://brokeprotocol.com/servers.json')
     .then(res => res.json())
@@ -23,7 +24,12 @@ function useJSON(json){
         obj["Players"].forEach(
             function(obj){
                 var li = document.createElement("li");
-                li.className = "list-group-item list-group-item-info";
+                if(vv == "right"){
+                    vv = "left"
+                }else{
+                    vv = "right"
+                }
+                li.className = "list-group-item list-group-item-info home-description " + vv;
                 li.innerHTML = obj;
                 ul.appendChild(li);
             }
