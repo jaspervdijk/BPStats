@@ -16,3 +16,13 @@ p{
 h1{
     font-size: 24px !important;
 }
+.home-description {
+    width: 50%
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
