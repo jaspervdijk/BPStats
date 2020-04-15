@@ -67,6 +67,7 @@ function mediaIO(titel, content){
     var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     rect.setAttribute("width", "100%");
     rect.setAttribute("height", "100%");
+    console.log(colorer);
     if(colorer == 0)
     {
         color = color1;
@@ -80,6 +81,7 @@ function mediaIO(titel, content){
         color = color3;
         colorer = 0;
     }
+    console.log(color);
     rect.setAttribute("fill", color);
     svg.appendChild(rect);
   

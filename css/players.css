@@ -26,3 +26,16 @@ h1{
 .right {
     float: right;
 }
+.list-group-item+.list-group-item {
+    border-top-width: 1px; 
+}
+.list-group-item {
+    color: #0c5460;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: #bee5eb;
+}
+.col-6{
+    padding-right: 15px;
+    padding-left: 0px;
+}

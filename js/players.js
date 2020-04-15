@@ -19,24 +19,27 @@ function useJSON(json){
         var p2 = document.createElement("p");
         p2.innerHTML = "Players: <br>";
         p2.style.fontWeight = "600";
-        var ul = document.createElement("ul");
-        ul.className = "list-group";
-        var row = document.createElement("div");
-        row.className = "row";
+        var cont = document.createElement("div");
+        cont.className = "container";
+        var rw = document.createElement("div");
+        rw.className = "row";
+        var lg = document.createElement("div");
+        cont.appendChild(rw);
+        var col6 = document.createElement("div");
+        col6.className = "col-6";
+        rw.appendChild(col6);
+        col6.appendChild(lg);
+        lg.className= "list-group d-flex flex-row flex-wrap";
         obj["Players"].forEach(
             function(obj){
-                var li = document.createElement("li");
-                if(vv == "right"){
-                    vv = "left"
-                }else{
-                    vv = "right"
-                }
-                li.className = "list-group-item list-group-item-info " + vv;
-                li.innerHTML = obj;
-                ul.appendChild(li);
+                var a = document.createElement("a");
+                a.href="#";
+                a.className = "list-group-item w-50 list-group-item-action";
+                a.innerText = obj;
+                lg.appendChild(a);
             }
         )
-        p2.appendChild(ul);
+        p2.appendChild(cont);
         p2.style.fontWeight = "600";
         p2.style.color = "red";
         var p3 = document.createElement("p");
