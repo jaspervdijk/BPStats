@@ -31,7 +31,7 @@ function useJSON(json){
                 }else{
                     vv = "right"
                 }
-                li.className = "list-group-item list-group-item-info vv";
+                li.className = "list-group-item list-group-item-info " + vv;
                 li.innerHTML = obj;
                 ul.appendChild(li);
             }
