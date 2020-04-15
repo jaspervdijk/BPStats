@@ -21,6 +21,8 @@ function useJSON(json){
         p2.style.fontWeight = "600";
         var ul = document.createElement("ul");
         ul.className = "list-group";
+        var row = document.createElement("div");
+        row.className = "row";
         obj["Players"].forEach(
             function(obj){
                 var li = document.createElement("li");
@@ -29,7 +31,7 @@ function useJSON(json){
                 }else{
                     vv = "right"
                 }
-                li.className = "list-group-item list-group-item-info home-description " + vv;
+                li.className = "list-group-item list-group-item-info vv";
                 li.innerHTML = obj;
                 ul.appendChild(li);
             }
